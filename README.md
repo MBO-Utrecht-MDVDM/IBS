@@ -25,10 +25,12 @@ In this readme file I want to make a few things clear:
 
 ## Start up
 1. php artisan serve
-2. php artisan tinker
-3. factory(App\User::class, 1)->create()
-### Now you have an admin acccount with the password set to: password
-4. php artisan migrate
+2. php artisan migrate
+3. php artisan tinker
+4. factory(App\User::class, 1)->create()
+Now you have an admin acccount with the following credentials:
+E-mail: admin@localhost.com
+Password: password
 
 ## Content
 This Laravel application consists of the following content:
