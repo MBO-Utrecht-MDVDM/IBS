@@ -28,6 +28,7 @@ In this readme file I want to make a few things clear:
 2. php artisan tinker
 3. factory(App\User::class, 1)->create()
 ### Now you have an admin acccount with the password set to: password
+4. php artisan migrate
 
 ## Content
 This Laravel application consists of the following content:
