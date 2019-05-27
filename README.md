@@ -13,7 +13,7 @@ In this readme file I want to make a few things clear:
 
 ## Common bugs
 * Errors in the helpers.php file.
-    * This happends when you don't have the correct PHP version
+    * This happens when you don't have the correct PHP version
 * Internal server error (500)
     * Be sure to use php artisan key:generate before starting the project
 * PHP artisan key:generate doesn't work
@@ -28,3 +28,10 @@ In this readme file I want to make a few things clear:
 2. php artisan tinker
 3. factory(App\User::class, 1)->create()
 ### Now you have an admin acccount with the password set to: password
+
+## Content
+This Laravel application consists of the following content:
+* User login
+* User/Admin roles
+* Questionnaires with questions and answers
+* The possibility to save the user answers to the database
