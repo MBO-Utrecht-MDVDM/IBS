@@ -30,7 +30,9 @@ In this readme file I want to make a few things clear:
 4. factory(App\User::class, 1)->create()
 
 Now you have an admin acccount with the following credentials:
+
 E-mail: admin@localhost.com
+
 Password: password
 
 ## Content
