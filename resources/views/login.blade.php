@@ -5,7 +5,7 @@
 IBS
 </div>
 
-
+<!-- Checks if the password is the same in the database -->
 
 <div class="row">
     <form method="post" action="{{ url('login/checklogin') }}">
@@ -20,10 +20,7 @@ IBS
     @endif
     @if (count($errors) > 0)
         <div class="alert alert-danger">
-            <ul>Credentials error:
-            @foreach($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
+            <ul>Credentials error
             </ul>
         </div>
     @endif

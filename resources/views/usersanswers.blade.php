@@ -2,7 +2,11 @@
 @section('title', 'Questionnaires')
 @section('content')
 
-
+<!--
+This page calls a foreach function for each Questionnaire.
+In each questionnaire is another foreach call for the questions.
+And in the questions is also a foreach call for the answers.
+-->
 
 @foreach ($questionnaires as $questionnaire)
 <div class="card uper">

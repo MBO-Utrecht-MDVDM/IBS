@@ -18,6 +18,7 @@ IBS
     </tr>
   </thead>
   <tbody>
+  <!-- Makes a table row for each user consisting of a edit and remove button -->
         <?php $users = DB::table('users')->get();
         foreach ($users as $user){
         ?>

@@ -15,6 +15,7 @@ Questionnaire overview
     </tr>
   </thead>
   <tbody>
+<!-- Makes a table row for each questionnaire consisting of a edit and remove button -->
         <?php $questionnaires = DB::table('questionnaires')->get();
         foreach ($questionnaires as $questionnaire){
         ?>

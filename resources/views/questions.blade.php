@@ -16,7 +16,7 @@ Questions from Questionnaire: {{$questionnaire_id}}
     </tr>
   </thead>
   <tbody>
-        
+<!-- Makes a table row for each question consisting of a edit and remove button -->
         @foreach ($questions as $question)
         <tr>
             <th scope="row">{{$question->id}}</th>

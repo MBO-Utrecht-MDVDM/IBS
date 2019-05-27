@@ -17,6 +17,8 @@ Answers
   </thead>
   <tbody>
         
+<!-- Makes a table row for each answer consisting of a edit and remove button -->
+
         @foreach ($answers as $answer)
         <tr>
             <th scope="row">{{$answer->id}}</th>
