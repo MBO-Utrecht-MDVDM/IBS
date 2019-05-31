@@ -14,7 +14,7 @@ class UsersAnswersController extends Controller
         $questionnaires = Questionnaire::all();
         return view('usersanswers', compact('questionnaires'));
     }
-
+// Checks if item = token if not then it saves the entry to the database
     public function store($user_id, Request $request)
     {
         \Log::info($request->all());
@@ -27,7 +27,6 @@ class UsersAnswersController extends Controller
         $newAnswer->answer_id = $value;
         $newAnswer->save();
         }
-        // UsersAnswers::create($request->all() + ['user_id' => $user_id]);
         return redirect('/');
     }
 }
