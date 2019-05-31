@@ -20,7 +20,7 @@ Questionnaire overview
         foreach ($questionnaires as $questionnaire){
         ?>
         <tr>
-            <th scope="row">{{$questionnaire->id}}</th>
+          <th scope="row">{{$questionnaire->id}}</th>
             <td><div class="links"><a>{{$questionnaire->title}}</a></div></td>
             <td><div class="links"><a href="{{ url('questionnaires/' . $questionnaire->id . '/questions')}}">View Questions</a></div></td>
             <td><div class="links"><a href="{{ url('questionnaires/' . $questionnaire->id . '/edit')}}">Edit Title</a></div></td>
@@ -31,7 +31,6 @@ Questionnaire overview
                     <input type="submit" class="btn btn-xs btn-danger" value="Delete" onclick="return confirm('Are you sure you want to delete this questionnaire?')">
                 </form>
             </td>
-        
         </tr>
         <?php } ?>
     </tbody>

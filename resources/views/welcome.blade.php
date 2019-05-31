@@ -8,10 +8,10 @@
 IBS
 </div>
 <div class="top-right links">
-                @if(isset(Auth::user()->email))
-                <a>{{ Auth::user()->email }}</a>
-                <a href="{{ url('login/logout') }}">Logout</a>
-                @endif
+    @if(isset(Auth::user()->email))
+    <a>{{ Auth::user()->email }}</a>
+    <a href="{{ url('login/logout') }}">Logout</a>
+    @endif
 </div>
 <div class="links">
 <!-- Checks if there's a user logged in, if not: asks the user to login. -->

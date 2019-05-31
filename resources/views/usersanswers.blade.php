@@ -15,25 +15,25 @@ And in the questions is also a foreach call for the answers.
 </div>
 <form method="post" action="{{ route('usersanswers.store', [$user_id = Auth::id()]) }}">
 @csrf
-@foreach ($questionnaire->questions as $question)
+  @foreach ($questionnaire->questions as $question)
 
 <h3>{{ $question->question }}</h3>
 
-@foreach ($question->answers as $answer)
-@if (($answer->type) === 'MC')
+    @foreach ($question->answers as $answer)
+      @if (($answer->type) === 'MC')
 <div>
   <input type="radio" id="{{ $answer->id }}" name="{{ $question->id }}" value="{{ $answer->id }}">
   <label for="{{ $answer->text }}">{{ $answer->text }}</label>
 </div>
 
-@elseif (($answer->type) === 'IF')
+      @elseif (($answer->type) === 'IF')
 <input type="text" id="{{ $answer->id }}" name="{{ $question->id }}" style="margin:10px;" placeholder="Input field"><br>
 
-@endif
+      @endif
 
-@endforeach
+    @endforeach
 
-@endforeach
+  @endforeach
 
 <button type="submit" value="submit" style="margin-top:10px; margin-bottom:10px;">Answer</button></form></div><br>
 
